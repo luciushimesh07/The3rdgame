@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
 
-:root{
-  --ink:#e9f8ff;
-  --paper:#050b11;
-  --cream:#071521;
-  --gold:#63e8ff;
-  --gold2:#9af2ff;
-  --muted:#718a98;
-  --line:rgba(99,232,255,.16);
-  --blue:#0a8fb3;
-  --blue2:#1bc8ef;
+:root {
+  --ink: #e9f8ff;
+  --paper: #050b11;
+  --cream: #071521;
+  --gold: #63e8ff;
+  --gold2: #9af2ff;
+  --muted: #718a98;
+  --line: rgba(99, 232, 255, 0.16);
+  --blue: #0a8fb3;
+  --blue2: #1bc8ef;
 }
 
 *{
@@ -24,34 +24,34 @@ html,body{
   font-family:"DM Sans",sans-serif;
 }
 
-body{
-  min-height:100vh;
-  overflow-x:hidden;
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: var(--paper);
+  background-image: url("https://pbs.twimg.com/media/GrZL9FiWAAAoIpZ?format=webp&name=medium");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* =========================
    BACKGROUND IMAGE
    ========================= */
 
-.ambient{
-  position:fixed;
-  inset:0;
-  z-index:0;
-
-  background:
-    linear-gradient(
-      rgba(2,8,14,.72),
-      rgba(3,11,18,.86)
-    ),
-    url("https://pbs.twimg.com/media/GrZL9FiWAAAoIpZ?format=webp&name=medium");
-
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-
-  filter:saturate(.85) contrast(1.05);
+.ambient {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  /* Dark overlay so text remains readable over the background image */
+  background: rgba(3, 8, 13, 0.7); 
+  /* Soft cyan radial glows on top of the image */
+  background-image: 
+    radial-gradient(circle at 12% 10%, rgba(27, 200, 239, 0.25), transparent 35%),
+    radial-gradient(circle at 88% 82%, rgba(10, 143, 179, 0.25), transparent 38%);
+  backdrop-filter: blur(2px);
+  pointer-events: none;
 }
-
 /* Subtle cyan atmospheric glow over image */
 .ambient::after{
   content:"";
