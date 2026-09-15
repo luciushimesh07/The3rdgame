@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chakravyuh — Final Mission: Time Zone Cipher</title>
+<link rel="stylesheet" href="final-mission.css">
+</head>
+<body>
+<div class="bg"></div>
+
+<header class="hud">
+  <div class="brand"><span>FINAL MISSION</span><strong>CHAKRAVYUH // CHRONO CIPHER</strong></div>
+  <div id="status">● DECODE TIME ZONES</div>
+</header>
+
+<main>
+  <section class="intro">
+    <p class="eyebrow">FINAL VERIFICATION MATRIX // RESTRICTED ACCESS</p>
+    <h1>THE <em>GLOBAL TIMELINE</em> CIPHER</h1>
+    <p>Examine the global satellite time wall below. Sum the exact hour values shown across all 8 global time zone clocks to derive the master unlock code.</p>
+  </section>
+
+  <section class="stage">
+    <div class="card media-card">
+      <img src="https://www.shutterstock.com/image-illustration/set-eight-clocks-time-zones-260nw-1574531077.jpg" alt="Global Time Zones Wall Clocks" class="stage-img">
+    </div>
+
+    <div class="puzzle-box">
+      <p class="puzzle-instructions">
+        <b>INSCRIPTION:</b> Calculate the sum of the hour readings from all 8 global time zone clocks.
+      </p>
+      <div class="input-group">
+        <input type="number" id="timeCipherInput" placeholder="Enter Sum..." autocomplete="off">
+        <button id="submitTimeBtn">EXECUTE UNLOCK →</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="feedback" class="feedback"></div>
+
+  <!-- VICTORY OVERLAY -->
+  <section id="victory" class="success hidden">
+    <p class="eyebrow">CHAKRAVYUH OVERRIDE COMPLETE</p>
+    <h2>OPERATION SUCCESSFUL</h2>
+    <div class="digit">67</div>
+    <p>All security layers breached. You have successfully conquered the entire challenge network!</p>
+    <button onclick="alert('Congratulations! You have cleared all missions of Chakravyuh!')">CLAIM VICTORY 🏆</button>
+  </section>
+</main>
+
+<script src="final-mission.js"></script>
+</body>
+</html>

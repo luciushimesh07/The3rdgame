@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chakravyuh — Mission 06: Geo Cipher</title>
+<link rel="stylesheet" href="next-mission.css">
+</head>
+<body>
+<div class="bg"></div>
+
+<header class="hud">
+  <div class="brand"><span>MISSION 06</span><strong>CHAKRAVYUH // GEO CIPHER</strong></div>
+  <div id="status">● LOCATE THE CAPITAL</div>
+</header>
+
+<main>
+  <!-- SECTION 1: MAP SELECTION -->
+  <section class="intro">
+    <p class="eyebrow">INTELLIGENCE TRIAL // CLASSIFIED</p>
+    <h1>IDENTIFY THE <em>CAPITAL</em></h1>
+    <p>Locate and select the capital district of Uttar Pradesh on the matrix below to proceed.</p>
+  </section>
+
+  <section class="stage" id="stageMap">
+    <div class="card">
+      <div class="map-container">
+        <!-- High-Resolution Vector UP Map -->
+        <img src="https://static.vecteezy.com/system/resources/previews/025/452/363/non_2x/uttar-pradesh-state-map-administrative-division-of-india-illustration-vector.jpg" alt="Uttar Pradesh Vector Map" class="target-map">
+        
+        <!-- Recalibrated Interactive District Pins -->
+        <button class="city-pin decoy" style="top: 25%; left: 16%;" data-city="Meerut"><span>Meerut</span></button>
+        <button class="city-pin decoy" style="top: 37%; left: 24%;" data-city="Agra"><span>Agra</span></button>
+        <button class="city-pin decoy" style="top: 28%; left: 39%;" data-city="Bareilly"><span>Bareilly</span></button>
+        <button class="city-pin decoy" style="top: 49%; left: 42%;" data-city="Kanpur"><span>Kanpur</span></button>
+        
+        <!-- TARGET CAPITAL -->
+        <button class="city-pin correct" style="top: 45%; left: 51%;" data-city="Lucknow"><span>Lucknow</span></button>
+        
+        <button class="city-pin decoy" style="top: 41%; left: 63%;" data-city="Ayodhya"><span>Ayodhya</span></button>
+        <button class="city-pin decoy" style="top: 61%; left: 66%;" data-city="Prayagraj"><span>Prayagraj</span></button>
+        <button class="city-pin decoy" style="top: 59%; left: 81%;" data-city="Varanasi"><span>Varanasi</span></button>
+        <button class="city-pin decoy" style="top: 66%; left: 33%;" data-city="Jhansi"><span>Jhansi</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: PLATINUM MALL PUZZLE -->
+  <section class="stage locked" id="stageMall">
+    <div class="intro">
+      <p class="eyebrow">LOCATION CONFIRMED // PLATINUM MALL</p>
+      <h2>FACILITY DECRYPTION (STAGE 1)</h2>
+    </div>
+
+    <div class="card media-card">
+      <img src="https://pbs.twimg.com/media/GrZL9FiWAAAoIpZ?format=webp&name=medium" alt="Platinum Mall" class="stage-img">
+    </div>
+
+    <div class="puzzle-box">
+      <p class="puzzle-instructions">
+        <b>FORMULA:</b> [Total letters in Uttar Pradesh Capital] × [College Floor Number]
+      </p>
+      <div class="input-group">
+        <input type="number" id="ansStage1" placeholder="Enter Result..." autocomplete="off">
+        <button id="btnStage1">VERIFY STAGE 1 →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: INSTITUTE PUZZLE -->
+  <section class="stage locked" id="stageInstitute">
+    <div class="intro">
+      <p class="eyebrow">FINAL VERIFICATION // INSTITUTE CODE</p>
+      <h2>FINAL VECTOR CALCULATION</h2>
+    </div>
+
+    <div class="card media-card">
+      <img src="https://content3.jdmagicbox.com/v2/comp/pune/r5/020pxx20.xx20.250910030436.n7r5/catalogue/pw-institute-of-innovation-pune-pune-tutorials-ijpfj9qtbo.jpg" alt="PW Institute of Innovation" class="stage-img">
+    </div>
+
+    <div class="puzzle-box">
+      <p class="puzzle-instructions">
+        <b>FORMULA:</b> [Previous Result] × [Total Periods Before Lunch]
+      </p>
+      <div class="input-group">
+        <input type="number" id="ansStage2" placeholder="Enter Final Cipher..." autocomplete="off">
+        <button id="btnStage2">UNLOCK ACCESS →</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="feedback" class="feedback"></div>
+
+<!-- FINAL SUCCESS OVERLAY -->
+  <section id="success" class="success hidden">
+    <p class="eyebrow">MISSION COMPLETE</p>
+    <h2>ALL CIPHERS PASSED</h2>
+    <div id="finalNumber" class="digit">42</div>
+    <p>Authentication Successful. Access Granted to Command Center.</p>
+    <button id="continueBtn">FINISH MISSION & PROCEED →</button>
+  </section>
+
+<script src="next-mission.js"></script>
+</body>
+</html>

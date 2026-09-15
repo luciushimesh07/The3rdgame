@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mission 03 // SOT Photo Archive</title>
+<link rel="stylesheet" href="mission-03.css">
+</head>
+<body>
+<div class="ambient"></div>
+<div class="grain"></div>
+
+<header class="topbar">
+  <div class="brand"><span class="dot"></span> ENGINEERS' DAY // CLUE CHALLENGE</div>
+  <div class="mission">MISSION 03 <span>•</span> PHOTO ARCHIVE</div>
+</header>
+
+<main>
+  <section class="intro">
+    <div class="kicker">VISUAL IDENTIFICATION // SOT ARCHIVE</div>
+    <h1>WHO <em>BELONGS</em><br>TO THE FRAME?</h1>
+    <div class="gold-line"></div>
+    <p class="lead">The photograph contains more than a memory. It contains your next code.</p>
+  </section>
+
+  <section class="mission-card">
+    <div class="photo-side">
+      <div class="photo-frame">
+        <div class="corner tl"></div><div class="corner tr"></div>
+        <div class="corner bl"></div><div class="corner br"></div>
+        <img src="sot-group-photo.jpg" alt="Group photograph">
+        <div class="photo-label"><span>IMG_7220</span><span>ARCHIVE // 03</span></div>
+      </div>
+    </div>
+
+    <div class="clue-side">
+      <div class="section-number">03</div>
+      <div class="clue-label">YOUR FIRST STEP</div>
+      <h2>COUNT THE<br><strong>VISITORS.</strong></h2>
+      <p class="question">
+        The photograph is enlarged for easier counting. Inspect every person visible in the frame.
+      </p>
+      <div class="definition">
+        <span>RULE</span>
+        <p>Count every person in the photograph who is <b>NOT</b> from your SOT batch classmate.</p>
+      </div>
+      <p class="micro">Do not count objects, posters, photographs, or people appearing inside screens.</p>
+
+      <div class="answer-area">
+        <label for="answer">ENTER THE TOTAL NUMBER OF PEOPLE</label>
+        <div class="answer-row">
+          <input id="answer" type="text" inputmode="numeric" maxlength="2" placeholder="00" autocomplete="off">
+          <button id="submit">VERIFY <span>→</span></button>
+        </div>
+        <div class="feedback" id="feedback"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="success" id="success">
+    <div class="success-card">
+      <div class="verified">✓ ANSWER VERIFIED</div>
+      <div class="answer">22</div>
+      <div class="success-rule"></div>
+      <h2>GOOD EYE.</h2>
+      <p>You found the correct count.<br>The next clue is now unlocked.</p>
+      <div class="stamp">SOT ARCHIVE // STEP 01 COMPLETE</div>
+      <button id="continue">CONTINUE TO NEXT STEP <span>→</span></button>
+    </div>
+  </section>
+</main>
+
+<script src="mission-03.js"></script>
+</body>
+</html>
